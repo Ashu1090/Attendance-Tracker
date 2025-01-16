@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset margin and padding for the entire page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Ensure full height for the page */
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body spans the full height */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Main content styling */
+main {
+  flex: 1; /* Ensures the content grows to fill available space */
+}
+
+/* Footer styling */
+footer {
+  background-color: #1f2937; /* Dark gray matching Tailwind's bg-gray-800 */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
